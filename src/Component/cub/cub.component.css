@@ -1,0 +1,84 @@
+@import url(../../styles.css);
+
+#Dad{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+    background-color: var(--Cor1);
+}
+
+#Son{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    height: 60%;
+    width: 80%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+}
+
+#Son::-webkit-scrollbar {
+    width: 3px;
+}
+
+#Son::-webkit-scrollbar-thumb {
+    background-color: var(--Cor4);
+}
+
+/* Cub */
+
+.Cub{
+    min-height: 258px;
+    min-width: 200px;
+    max-height: 258px;
+    max-width: 200px;
+    border: none;
+    background-color: transparent;
+    margin: 10px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+.Title, .Content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--Cor1);
+}
+
+.Title{
+    min-height: 50px;
+    width: 100%;
+    background-color: var(--Cor3);
+    border-radius: 5px 5px 0px 0px;
+}
+
+.Content{
+    min-height: 200px;
+    width: 20%;
+    background-color: var(--Cor4);
+    width: 100%;
+    border-radius: 0px 0px 5px 5px;
+}
+
+button{
+    transition: 0.2s;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+#ContentH2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}

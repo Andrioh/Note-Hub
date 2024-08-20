@@ -1,0 +1,107 @@
+@import url(../../styles.css);
+
+#Dad{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--Cor3);
+    height: 10%;
+    width: 100%;
+}
+
+#Title, #Nav, #Search{
+    display: flex;
+    height: 100%;
+    color: var(--Cor1);
+}
+
+#Nav, #Search{
+    width: 40%;
+}
+
+/* Title */
+
+#Title{
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    text-align: center;
+}
+
+#H1Title{
+    font-size: 32px;
+}
+
+#InputTitle, #InputTitle:focus{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 28%;
+    color: var(--Cor1);
+    border-bottom: 1px solid var(--Cor1);
+    margin-right: 4px;
+}
+
+/* Nav */
+
+#Nav{
+    align-items: center;
+}
+
+button{
+    text-decoration: none;
+    color: var(--Cor1);
+    background-color: transparent;
+    border: none;
+}
+
+button:hover{
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    cursor: pointer;
+}
+
+/* Search */
+
+#Search{
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 850px) {
+
+    #H1Title{
+        font-size: 140%;
+     }
+
+}
+
+ @media (max-width: 600px) {
+     #H1Title{
+        font-size: 100%;
+     }
+
+     button{
+        font-size: 55%;
+     }
+
+     #InputTitle[_ngcontent-ng-c776021445], #InputTitle[_ngcontent-ng-c776021445]:focus{
+        font-size: 54%;
+     }
+ }
+
+ @media (max-width: 280px) {
+
+    #Search{
+        display: none;
+    }
+
+    #Title{
+        width: 50%;
+    }
+
+    #Nav{
+        width: 50%;
+        justify-content: center;
+    }
+
+ }

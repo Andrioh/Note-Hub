@@ -1,0 +1,26 @@
+@import url(../../styles.css);
+
+#Dad{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+}
+
+#Son{
+    height: 90%;
+    width: 95%;
+}
+
+textarea{
+    color: var(--Cor2);
+    height: 100%;
+    width: 100%;
+    text-align: left;
+    border: none;
+}
+
+textarea:focus{
+    outline: none;
+}

@@ -1,0 +1,15 @@
+<div id="Dad">
+    <div id="Title">
+        <h1 id="H1Title">NOTE-HUB</h1>
+    </div>
+    <div id="Nav">
+        <nav>
+            <button *ngIf="!GetHeader()" (click)="AddNote()">New note</button>
+            <input type="text" [(ngModel)]="TitleNoteMsg" (ngModelChange)="oninput()" *ngIf="GetHeader()" value="New note" id="InputTitle" autocomplete="off">
+            <button *ngIf="GetHeader()" (click)="DeleteNote()">- Delete</button>
+        </nav>
+    </div>
+    <div id="Search">
+        <button *ngIf="ButtonSearch()" (click)="BackButton()">Back</button>
+    </div>
+</div>

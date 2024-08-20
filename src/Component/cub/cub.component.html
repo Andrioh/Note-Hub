@@ -1,0 +1,13 @@
+<div id="Dad">
+    <div id="Son">
+        <h1 id="H1Title" *ngIf="!hasnote()">Looks like you don't have any grades yet</h1>
+        <button class="Cub" *ngFor="let note of notes" (click)="NoteDetail(note.id)">
+            <div class="Title">
+                <h1>{{note.title}}</h1>
+            </div>
+            <div class="Content">
+                <h2 id="ContentH2">{{ truncateContent(note.content, 45) }}</h2>
+            </div>
+        </button>
+    </div>
+</div>
